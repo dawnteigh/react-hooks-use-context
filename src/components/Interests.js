@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
+import { UserContext } from '../context/User'
 
-function Interests({ interests, theme }) {
+function Interests({ interests}) {
+  const { theme } = useContext(UserContext)
   return (
     <div>
       <h4>Interests</h4>
